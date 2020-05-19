@@ -1,0 +1,104 @@
+/** BASIC STYLES **/
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body {
+  margin: 0;
+  background: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/** HEADER STYLES **/
+header {
+  background: black;
+  padding: 10px 16px;
+}
+
+header > div {
+  display: inline-block;
+}
+
+/** MENU BAR STYLES **/
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > ul > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu-left {
+  position: absolute;
+  right: 10px;
+  top: 16px;
+}
+
+/** HERO STYLES **/
+.hero {
+  width: 100%;
+  background-image: url(../img/img_cover_home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  text-align: center;
+}
+
+.hero * {
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 200px;
+}
+
+/** INPUT STYLES & BUTTON **/
+.input-group {
+  width: 100%;
+  position: relative;
+}
+
+.input-group input {
+  padding: 10px 16px;
+  width: 300px;
+}
+
+.search-button {
+  position: relative;
+  height: 35px;
+  left: -35px;
+  background: black;
+}
+
+/** FOOTER STYLES **/
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+footer ul {
+  margin-top: 0;
+  list-style: none;
+}
+
+footer .info,
+footer .socials {
+  display: inline-block;
+}
+
+footer .socials li {
+  display: inline-block;
+  margin-left: 20px;
+}
