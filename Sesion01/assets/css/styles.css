@@ -63,6 +63,7 @@ header .logo:hover {
 .button {
   background: transparent;
   border: 1px solid black;
+  opacity: 1;
   color: white;
   border-radius: 5px;
   padding: 5px;
