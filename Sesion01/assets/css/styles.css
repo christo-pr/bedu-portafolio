@@ -62,6 +62,7 @@ header .logo:hover {
 
 .button {
   background: transparent;
+  border: 1px solid black;
   opacity: 1;
   color: white;
   border-radius: 5px;
@@ -72,6 +73,7 @@ header .logo:hover {
 .button:hover {
   background: rgb(65, 65, 65);
   cursor: pointer;
+  color:rgb(216, 135, 135);
 }
 
 /** HERO STYLES **/
