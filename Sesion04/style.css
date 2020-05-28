@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  height: 500px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}

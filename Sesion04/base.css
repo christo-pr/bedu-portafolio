@@ -1,0 +1,20 @@
+body {
+  background: #f5eccd;
+}
+
+div:not(.container) {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: monospace;
+  color: #f5eccd;  
+}
+
+div:not(.container):nth-child(even) {
+  background: #3e885B;
+}
+
+div:not(.container):nth-child(odd) {
+  background: rgb(218, 139, 133);
+}
