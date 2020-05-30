@@ -1,0 +1,37 @@
+/* Base Font */
+* {
+  font-family: 
+    'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Container */
+.container {
+  margin: 0 25%;
+}
+
+/* Header & Nav */
+header {
+  width: 100%;
+  background-color: white;
+  opacity: .5;
+  position: fixed;
+  z-index: 99;
+}
+
+header .top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .main-nav {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+}
