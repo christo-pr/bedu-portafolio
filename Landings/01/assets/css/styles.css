@@ -48,6 +48,7 @@ header .main-nav {
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
+  padding-top: 40px;
 }
 
 .landing-section .section-title h2 {
@@ -116,14 +117,159 @@ section.services-section ul li {
   font-size: 20px;
   padding: 20px 0;
 }
+/*****************************/
 
+/* Contact Form */
+section.contact-section {
+  min-height: 60vh;
+  color: white;
+  background: rgba(6, 36, 6, .7);
+}
+
+.background-contact-form {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/form-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter .text-counter {
+  font-size: 20px;
+}
+
+.counter > .square-list li {
+  display: inline-block;
+  padding: 20px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 40px;
+  position: relative;
+  margin: 0 10px;
+}
+
+.counter > .square-list span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  top: 92px;
+  left: 20px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template: repeat(3, 50px) / 1fr 1fr;
+  grid-gap: 10px;
+  width: 50%;
+  grid-template-areas:
+   "input1 txtarea"
+   "input2 txtarea"
+   "btn btn";
+   margin-bottom: 20px;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.contact-form input[type="name"] {
+  grid-area: input1;
+}
+.contact-form input[type="email"] {
+  grid-area: input2;
+}
+.contact-form textarea {
+  grid-area: txtarea;
+}
+.contact-form input[type="submit"] {
+  grid-area: btn;
+}
+/*****************************/
+
+
+/* Us section */
+section.us-section {
+  background: rgb(239, 239, 239);
+}
+
+.us-section .card {
+  width: 100%;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.us-section .card .card-img {
+  display: flex;
+  width: 49%;
+  border-right: 5px solid #bda624;
+  align-items: center;
+}
+
+.us-section .card .card-img img {
+  height: 600px;
+  width: 100%;
+}
+
+.us-section .card .card-body {
+  display: flex;
+  width: 49%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.us-section .card .card-img::after {
+  content: "";
+  width: 0;
+  height: 0;
+
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  
+  border-right: 30px solid #bda624;
+  position: absolute;
+  left: calc(50% - 49px);
+}
+
+.us-section .card:nth-child(odd) .card-img {
+  order: 2;
+  border-right: none;
+  border-left: 5px solid #bda624;
+}
+
+.us-section .card:nth-child(odd) .card-img::after {
+  border-left: 30px solid #bda624;
+
+  border-right: none;
+  left: calc(50% - 19px);
+}
 
 /*****************************/
+
+footer {
+  background: #2b2a2a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
 
 /* Buttons */
 input[type="submit"],
 .button {
-  background-color: #bda624;
+  background-color:#bda624;
   color: white;
   padding: 15px 30px;
   text-transform: uppercase;
