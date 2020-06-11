@@ -1,0 +1,143 @@
+/* Variables */
+:root {
+  --black-color: #141414;
+  --blue-color: #5bc0eb;
+  --strong-blue-color: #86c4eb;
+  --gray-color: #7a7a7a;
+  --yellow-color: #fffc00;
+  --white-color: #fff;
+}
+
+body * {
+  font-family: 'Metal Mania', cursive;
+}
+
+/* Basics */
+.container {
+  margin: 0 25%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+/**************************/
+
+/* Header */
+header > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.navbar {
+  display: flex;
+}
+.navbar li {
+  margin: 0 30px;
+  font-size: 20px;
+}
+/**************************/
+
+/* Hero */
+.hero {
+  background-image: url(../img/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hero h1 {
+  font-size: 9vw;
+  font-weight: bold;
+  color: var(--black-color);
+}
+.hero h3 {
+  font-size: 3vw;
+  font-weight: bold;
+  color: var(--strong-blue-color);
+}
+.hero p {
+  font-weight: bold;
+  width: 60%;
+  color: var(--gray-color);
+}
+/**************************/
+
+/* Second Nav */
+.second-nav {
+  padding: 20px
+}
+.second-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+/**************************/
+
+/* Gallery */
+.gallery {
+  background: var(--blue-color);
+  display: grid;
+  grid-template: repeat(3, 300px) / repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 60px 40px;
+}
+
+.gallery > .item {
+  text-align: center;
+  padding-top: 20px;
+}
+.gallery > .item > img {
+  height: 300px;
+  width: 100%;
+}
+
+.gallery .view-more {
+  text-align: center;
+  margin-top: 50px;
+  grid-column: 1 / -1;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.gallery .view-more a {
+  border-bottom: 3px solid var(--yellow-color);
+}
+/**************************/
+
+/* Footer */
+footer {
+  background: var(--yellow-color);
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h4 {
+  color: var(--black-color);
+  font-size: 18px;
+}
+
+footer p {
+  color: var(--gray-color);
+  font-size: 15px;
+}
+
+footer .socials ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .socials ul li {
+  margin: 0 5px;
+}
+
+footer .socials ul li i {
+  font-size: 20px;
+}
+/**************************/
